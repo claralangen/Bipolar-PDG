@@ -1,0 +1,61 @@
+@import './reset.scss';
+html{
+  font-size:62.5%;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+}
+body{
+  background-image: url('../src/assets/Background.svg');
+  font-size: 1.9rem;
+  color: #2D4A84;
+}
+
+
+.header{
+  width: 94%;
+  margin-top: 4%;
+  display: flex;
+  justify-content: flex-end;
+  .score{
+    width: 26%;
+    display:flex;
+    justify-content: flex-end;
+    &-circle{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+    }
+    &-number{
+      font-weight: bold;
+      color: #DE4877;
+    }
+  }
+}
+
+.text{
+  display: flex;
+  flex-direction: column-reverse;
+  .question{
+    width: 90%;
+    margin: 6% auto 0;
+    font-weight: bold;
+    font-size: 2.4rem;
+  }
+  .choice{
+    margin: 1.6% auto 0;
+    padding: 1.8%;
+    width: 90%;
+    background: white;
+    border-radius: 10px;
+    &:hover{
+      background: #46b3ea;
+      color: white;
+      box-shadow: 19px 13px 112px -26px rgba(0,0,0,0.57);
+      cursor: pointer;
+    }
+  }
+}
