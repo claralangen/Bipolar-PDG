@@ -1,6 +1,6 @@
 import choices from '../js/choices';
 import illustration from '../js/illustration';
-import src from '../assets/illu1.svg';
+import src from '../assets/cantine.svg';
 import sounds from '../js/sounds';
 import sound from '../assets/button.wav';
 import gerard from './gerard';
@@ -51,7 +51,7 @@ export default function(){
         {
             text:choice3,
             callBack: test3,
-            score: -3
+            score: 3
         }
     ])
 }

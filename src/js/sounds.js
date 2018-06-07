@@ -1,12 +1,12 @@
 class Sounds{
     constructor(){
-        this.textContainer = document.querySelector('.text');
+        this.mainContainer = document.querySelector('.mainContainer');
     }
     readSound(src){
         const sound = document.createElement('audio');
         sound.setAttribute('src',src);
         sound.setAttribute('autoplay', true);
-        this.textContainer.appendChild(sound);
+        this.mainContainer.appendChild(sound);
     }
 }
 

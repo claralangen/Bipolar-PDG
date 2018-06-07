@@ -34,6 +34,7 @@ function test3() {
 }
 
 export default function(){
+    choices.scoreDisplay();
     illustration.illustrationDisplay(src);
     choices.questionDisplay(question);
     choices.choicesDisplay([

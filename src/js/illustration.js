@@ -9,8 +9,18 @@ class Illustration {
         this.imgContainer.appendChild(illustration);
         this.img = illustration;
     }
+    bigIllustrationDisplay(src){
+        const bigIllu = document.createElement('img');
+        bigIllu.setAttribute('src',src);
+        bigIllu.classList.add('bigIllu');
+        this.imgContainer.appendChild(bigIllu);
+        this.bigIllu = bigIllu;
+    }
     deleteIllustration(){
         this.img.remove();
+    }
+    deleteBigIllu(){
+        this.bigIllu.remove();
     }
 }
 

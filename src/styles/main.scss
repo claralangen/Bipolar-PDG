@@ -7,19 +7,19 @@ html{
 body{
   background-image: url('../src/assets/Background.svg');
   font-size: 1.9rem;
+  line-height: 3.6rem;
   color: #2D4A84;
 }
-
-
-.header{
-  width: 94%;
-  margin-top: 4%;
+.mainContainer{
+  position: relative;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
   .score{
-    width: 26%;
-    display:flex;
-    justify-content: flex-end;
+    position: absolute;
+    top:6%;
+    right:6%;
     &-circle{
       display: flex;
       justify-content: center;
@@ -34,28 +34,107 @@ body{
       color: #DE4877;
     }
   }
-}
+  .title{
+    position: absolute;
+    top: 18%;
+    left: 25%;
+    font-family: Forte,serif;
+    font-size: 6rem;
+    color: white;
 
-.text{
-  display: flex;
-  flex-direction: column-reverse;
-  .question{
-    width: 90%;
-    margin: 6% auto 0;
-    font-weight: bold;
-    font-size: 2.4rem;
   }
-  .choice{
-    margin: 1.6% auto 0;
-    padding: 1.8%;
-    width: 90%;
-    background: white;
-    border-radius: 10px;
-    &:hover{
+  .imgContainer{
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    .bigIllu{
+      position: absolute;
+      top: 10%;
+      left: 6%;
+    }
+  }
+  .textContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    .paragraph{
+      margin: 10% auto 0;
+      padding: 1.8% 0 1.8% 10% ;
+      width: 70%;
+      background: white;
+      border-radius: 10px;
+    }
+    .question{
+      width: 90%;
+      margin: 6% auto 0;
+      font-weight: bold;
+      font-size: 2.4rem;
+    }
+    .choice{
+      margin: 1.6% auto 0;
+      padding: 1.4%;
+      width: 90%;
+      background: white;
+      border-radius: 10px;
+      &:hover{
+        background: #46b3ea;
+        color: white;
+        box-shadow: 19px 13px 112px -26px rgba(0,0,0,0.57);
+        cursor: pointer;
+      }
+    }
+  }
+  .persosContainer{
+    display:flex;
+    justify-content: space-between;
+    width: 96%;
+    margin: 3% auto 0;
+    &-title{
+      font-family: Forte,serif;
+      font-size: 6rem;
+      color: white;
+      text-align: center;
+    }
+    .perso{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.6%;
+      &-name{
+        margin-top: 10%;
+        font-family: Forte, serif;
+        font-size: 3.6rem;
+      }
+      &-description{
+        margin-top: 1%;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #67A6E6;
+        text-align: center;
+      }
+    }
+  }
+  .buttonContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  .button{
+    text-align: center;
+    margin-right: 4%;
+    background-color: #8AEFAC;
+    border-radius: 50px;
+    box-shadow: 19px 13px 112px -26px rgba(0,0,0,0.57);
+    padding: 1.4% 3%;
+    color: white;
+    font-weight: 400;
+    font-size: 2.2rem;
+    &:hover {
       background: #46b3ea;
       color: white;
-      box-shadow: 19px 13px 112px -26px rgba(0,0,0,0.57);
+      box-shadow: 19px 13px 112px -26px rgba(0, 0, 0, 0.57);
       cursor: pointer;
     }
   }
 }
+
+

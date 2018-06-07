@@ -1,8 +1,10 @@
 import choices from '../js/choices';
 import illustration from '../js/illustration';
-import src from '../assets/illu1.svg';
+import src from '../assets/photocopieuse.svg';
 import sounds from '../js/sounds';
 import sound from '../assets/button.wav';
+import bad from './badRacisme';
+import good from './good';
 
 const question = 'Au détour d’un couloir vous tombez sur Gérard qui parle à Martine avec entrain de sa collection de mouchoir aux motifs aquatiques';
 const choice1= 'Vous parlez à Gérard du dossier en cours, tout en lançant des regards appuyés à Martine';
@@ -15,20 +17,36 @@ function test1() {
     choices.deleteText();
     choices.deleteChoice();
     illustration.deleteIllustration();
-
+    choices.deleteScore();
+    if (choices.score < 0){
+        bad();
+    }else{
+        good();
+    }
 }
 function test2() {
     sounds.readSound(sound);
     choices.deleteText();
     choices.deleteChoice();
     illustration.deleteIllustration();
-
+    choices.deleteScore();
+    if (choices.score < 0){
+        bad();
+    }else{
+        good();
+    }
 }
 function test3() {
     sounds.readSound(sound);
     choices.deleteText();
     choices.deleteChoice();
     illustration.deleteIllustration();
+    choices.deleteScore();
+    if (choices.score < 0){
+        bad();
+    }else{
+        good();
+    }
 
 }
 
